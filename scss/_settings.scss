@@ -115,10 +115,30 @@ $include-html-global-classes: $include-html-classes;
 // $jet         : #222222;
 // $black       : #000000;
 
-// We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
+//Primary color ways of  anikiwa
+$frenchPass:      #a8fdee;
+$anikiwa:           #a8e3fd;
+
+//Company Names for anikiwa
+$mainAnikiwa: $anikiwa;
+$secondaryAnikiwa: $frenchPass;
+
+
+//Secondary color ways
+$frostedMint:      #cffff7;
+$aliceBlue:        #f5fcff;
+$bittersweet:     #fe6363;
+
+//Greys
+$scropion:        #5a5a5a;
+$tundora:         #4c4c4c;
+$alabaster:      #f7f7f7;
+$concrete:      #f2f2f2;
+
+//We use these as default colors throughout
+$primary-color: $mainAnikiwa;
+$secondary-color: $secondaryAnikiwa;
+$alert-color: $bittersweet;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
