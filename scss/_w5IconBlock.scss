@@ -1,0 +1,23 @@
+.w5IconBlock{
+  @media #{$small-only}{
+    background-color: red;
+    li:nth-child(-n+2){
+      background-color: blue;
+    }
+  }
+  margin-top: $marginTop;
+  margin-bottom: $marginTop;
+  i{
+    color: $primary-color;
+    margin-right: 0.5rem;
+    font-size: rem-calc(20);
+  }
+  span{
+    &.w5Title{
+      font-weight: bold;
+    }
+    &.w5Content{
+      display: block;
+    }
+  }
+}
