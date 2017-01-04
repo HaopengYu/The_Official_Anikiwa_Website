@@ -2,9 +2,20 @@
   margin-top: $marginTop;
   margin-bottom: $marginTop;
   li{
+    .accordion-navigation{
+      margin-bottom: rem-calc(22)!important;
+    }
+    i{
+      color:$primary-color;
+    }
     a{
+      background: white;
+      border: 1px solid $scropion;
       &:before{
         content:"\f078";
+        font-family: FontAwesome;
+        float:right;
+        color:$scropion;
       }
     }
   }
