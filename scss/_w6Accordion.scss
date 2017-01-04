@@ -1,0 +1,16 @@
+.w6Accordion{
+  margin-top: $marginTop;
+  margin-bottom: $marginTop;
+  li{
+    a{
+      &:before{
+        content:"\f078";
+      }
+    }
+  }
+  @media #{$medium-up} {
+    img{
+      height:20.64rem;
+    }
+  }
+}
