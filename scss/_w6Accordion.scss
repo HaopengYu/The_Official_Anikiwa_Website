@@ -2,19 +2,33 @@
   margin-top: $marginTop;
   margin-bottom: $marginTop;
   li{
+    &.active{
+      &:before{
+        transform: rotate(180deg);
+        margin:0.45rem;
+      }
+    }
+    &:before{
+      content:"\f078";
+      font-family: FontAwesome;
+      float:right;
+      transition: all 300ms ease-out;
+      color:$whiteFlash;
+      padding: 0.5rem 0.5rem 0 0;
+    }
+    .content{
+      color:$blackInline;
+      font-size: rem-calc(14);
+    }
     i{
       color:$primary-color;
       font-size: rem-calc(20);
+      margin-right: 0.5rem;
     }
     a{
       background: white;
-      border: 1px solid $scropion;
-      &:before{
-        content:"\f078";
-        font-family: FontAwesome;
-        float:right;
-        color:$scropion;
-      }
+      border: 1px solid $whiteFlash;
+      font-weight: bold;
     }
   }
   @media #{$medium-up} {
@@ -25,4 +39,11 @@
       height:20.64rem;
     }
   }
+  .accordion .accordion-navigation > .content.active, .accordion dd > .content.active{
+    border: 1px solid $whiteFlash;
+    border-top: 0px;
+    min-height: 9.76rem;
+  }
 }
+
+//transform: rotate(90deg);
