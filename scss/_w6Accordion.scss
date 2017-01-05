@@ -2,11 +2,9 @@
   margin-top: $marginTop;
   margin-bottom: $marginTop;
   li{
-    .accordion-navigation{
-      margin-bottom: rem-calc(22)!important;
-    }
     i{
       color:$primary-color;
+      font-size: rem-calc(20);
     }
     a{
       background: white;
@@ -20,6 +18,9 @@
     }
   }
   @media #{$medium-up} {
+    .accordion .accordion-navigation, .accordion dd{
+      margin-bottom: rem-calc(22)!important;
+    }
     img{
       height:20.64rem;
     }
