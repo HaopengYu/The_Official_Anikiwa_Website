@@ -1,3 +1,28 @@
 body{
   background-color: white;
 }
+
+.w2TitleText{
+
+  p{
+    &.w2SubTitle{
+      color:red;
+      @extend h4;
+    }
+    &.w2Content{
+      color:blue;
+    }
+  }
+  h2{
+    &:before{
+      content: "";
+      position: absolute;
+      border-top: 3px solid black;
+      height: 1px;
+      width: 100px;
+      margin: 0 auto;
+      bottom: 33%;
+      left: 45%;
+    }
+  }
+}

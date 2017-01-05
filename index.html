@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anikiwa </title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/animate.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <!-- Nav -->
@@ -16,7 +17,6 @@
        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
     </ul>
-
     <section class="top-bar-section">
       <!-- Right Nav Section -->
       <ul class="right">
@@ -28,16 +28,43 @@
     </section>
   </nav>
   <!-- End Nav -->
-  <!-- Begin w2TitleText -->
   <div class="w2TitleText">
     <div class="row">
       <div class="column">
-        <h2 class="text-center">
+        <p class="w2SubTitle text-center animated slideInUp">
+          adsjaksa
+        </p>
+        <h2 class="w2Title text-center">
           Mooie Title
         </h2>
+        <p class="w2Content text-center">
+          adsjaksa
+        </p>
       </div>
     </div>
   </div>
+  <!-- Begin w1Slideshow -->
+  <div class="w1Slideshow">
+    <div class="row">
+      <div class="column">
+        <div class="slickContainer">
+          <div class="testSlider">
+            <div>
+              <img src="./img/placeholder1.jpg"/>
+            </div>
+            <div>
+              <img src="./img/placeholder2.jpg"/>
+            </div>
+            <div>
+              <img src="./img/placeholder3.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End w1Slideshow -->
+  <!-- Begin w2TitleText -->
   <!-- End w2TitleText -->
   <!-- Begin w5IconBlock -->
   <div class="w5IconBlock">
@@ -79,6 +106,37 @@
       </div>
     </div>
     <!-- End w5IconBlock -->
+    <!-- Begin w3BlockGridItems-->
+    <div class="w3BlockGridItems">
+      <div class="row">
+        <div class="column">
+          <ul class="small-block-grid-1 medium-block-grid-3">
+            <li>
+              <img src="./img/placeholder1.jpg"/>
+              <div class="w3Content">
+                <i class="fa fa-user"></i>
+                <span class="w3Text">Super Team</span>
+              </div>
+            </li>
+            <li>
+              <img src="./img/placeholder1.jpg"/>
+              <div class="w3Content">
+                <i class="fa fa-user"></i>
+                <span class="w3Text">Super Team</span>
+              </div>
+            </li>
+            <li>
+              <img src="./img/placeholder1.jpg"/>
+              <div class="w3Content">
+                <i class="fa fa-user"></i>
+                <span class="w3Text">Super Team</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End w3BlockGridItems -->
     <!-- Begin w6Accordion -->
     <div class="w6Accordion">
       <div class="row">
@@ -121,12 +179,6 @@
     <!-- End w6Accordion -->
     <div class="row">
       <div class="column">
-        <div class="testSlider">
-          <div>your content1</div>
-          <div>your content2</div>
-          <div>your content3</div>
-        </div>
-      </div>
       <i class="fa fa-car"></i>
     </div>
 
@@ -154,7 +206,8 @@
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
-            dots: true
+            dots: false,
+            fade:true
           }
 
         }, {
