@@ -1,5 +1,8 @@
-body{
-  background-color: white;
+.w2TitleText{
+  background-color: blue;
+  &.smallTitle{
+    font-weight: bold;
+  }
 }
 
 .w2TitleText{
