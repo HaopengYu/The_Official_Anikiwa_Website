@@ -1,3 +1,6 @@
-body{
-  background-color: pink;
+.w2TitleText{
+  background-color: blue;
+  &.smallTitle{
+    font-weight: bold;
+  }
 }
