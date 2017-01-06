@@ -1,14 +1,10 @@
-.w2TitleText{
-  background-color: red;
+.w7TitleText{
+  background-color: blue;
     p{
-        &.w2Subtitle{
+        &.w7Subtitle{
           font-weight: bold;
           margin-bottom: rem-calc(5);
           padding-top: rem-calc(50);
-        }
-        &.w2Content{
-          font-style: italic;
-          margin-top: rem-calc(60);
         }
     }
     h2{
