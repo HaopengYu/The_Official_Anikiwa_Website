@@ -1,19 +1,84 @@
 .w3BlockGridItems{
   margin: $widgetMargin 0 $widgetMargin 0;
-  li{
-
+  i{
+    font-size: 3rem;
+    color:$primary-color;
   }
-  .w3Content{
-    //display: none;
-    position: absolute;
-    i{
-      font-size: 2rem;
-      margin:0 auto;
+  h4,p{
+    color:white;
+    &.w3Content-heading{
+      font-weight: bold;
+      @extend h5;
+      color: white;
     }
-    span{
-      display: block;
-      text-align: center;
-      margin:0 auto;
+  }
+  .w3Content {
+  	width: 100%;
+  	height: rem-calc(250);
+    text-align: center;
+  	border: 1px solid #ddd;
+  	-webkit-transition: all 0.3s ease;
+  	transition: all 0.3s ease;
+    .w3Content-icon-box {
+      position: relative;
+      top: rem-calc(50);
+      display: inline-block;
+      margin-bottom: rem-calc(5);
+      padding: 10px;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+    .w3Content-heading {
+      position: relative;
+      top: rem-calc(50);
+      -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .w3Content-description {
+      width: 80%;
+      margin: 0 auto;
+      opacity: 0;
+      -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+    }
+    .w3Content-icon-box > .w3Content-icon {
+  	  width: rem-calc(40);
+    }
+    &:hover {
+  	  border-color: $primary-color;
+    }
+    &:hover .w3Content-icon-box {
+  	  top: -30px; //- waardes mogen van mij wel in px units
+    }
+    &:hover .w3Content-heading {
+  	  top: -30px; //- waardes mogen van mij wel in px units
+    }
+    &:hover .w3Content-description {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+    &.bg1{
+      background-image:url(../img/placeholder1.jpg);
+      width: 100%;
+      height: 15.625rem;
+      background-size: 450px 450px;
+    }
+    &.bg2{
+      background-image:url(../img/placeholder2.jpg);
+      width: 100%;
+      height: 15.625rem;
+      background-size: 450px 450px;
+    }
+    &.bg3{
+      background-image:url(../img/placeholder3.jpg);
+      width: 100%;
+      height: 15.625rem;
+      background-size: 450px 450px;
     }
   }
 }
