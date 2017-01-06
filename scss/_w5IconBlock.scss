@@ -1,8 +1,9 @@
 .w5IconBlock{
+  margin: $widgetMargin 0 $widgetMargin 0;
   @media #{$small-only}{
-    background-color: red;
+    background-color:  white;
     li:nth-child(-n+2){
-      background-color: blue;
+      background-color: white;
     }
   }
   margin-top: $marginTop;
