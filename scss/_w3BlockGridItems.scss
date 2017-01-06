@@ -8,6 +8,8 @@
     color:white;
     &.w3Content-heading{
       font-weight: bold;
+      @extend h5;
+      color: white;
     }
   }
   .w3Content {
