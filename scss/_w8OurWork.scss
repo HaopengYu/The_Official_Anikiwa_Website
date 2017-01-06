@@ -1,3 +1,57 @@
 .w8OurWork{
-  background-image:url(../img/placeholder2.jpg);
+  //background-image:url(../img/placeholder2.jpg);
+  background-color: pink;
+  div{
+    &.w8ImageContent{
+      width: rem-calc(100);
+      height: rem-calc(100);
+      overflow:hidden;
+      float:left;
+      border-radius: 50%;
+    }
+    &.w8Content{
+      float:right;
+      padding-left: rem-calc(20);
+      width: calc(100% - 100px);
+    }
+    &.w8Content{
+      float:right;
+      padding-left: rem-calc(20);
+      width: calc(100% - 100px);
+    }
+  }
+  img{
+    min-width: auto;
+    min-height: 100%;
+
+
+  }
+  p{
+    &.w8Text{
+      padding-top: rem-calc(40);
+    }
+  }
+  span{
+    &.w8Name{
+      display: block;
+      font-weight:bold;
+    }
+    &.w8Job{
+      font-style: italic;
+      &:before{
+        @media #{$small-only} {
+        
+        }
+        content: '';
+        position: absolute;
+        border-top: 3px solid black;
+        height: 1px;
+        width: rem-calc(60);
+        margin: 0 auto;
+        margin-top: rem-calc(35);
+
+
+      }
+    }
+  }
 }
