@@ -1,3 +1,12 @@
 // We use this Base to set up various general/global variables
 $marginTop: 2rem;
+$marginSmallTop:1.125rem;
 $widgetMargin: 2rem;
+
+@mixin HrLine{
+  content: " ";
+  display: block;
+  border-top: 3px solid $primary-color;
+  width: rem-calc(50);
+  margin-top: $widgetMargin;
+}
