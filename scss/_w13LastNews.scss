@@ -13,9 +13,8 @@
         margin-bottom: 0;
         &.event-day{
           font-weight: bold;
-          //margin-top: rem-calc(10);
+          margin-top: rem-calc(5);
           font-size: 1.2rem;
-
         }
         &.event-month{
           font-size: rem-calc(12);
@@ -28,15 +27,13 @@
         font-weight: bold;
         display: block;
         padding-top: rem-calc(10);
-
       }
       &.w13Text{
         &:after{
-        @include HrLine;
-        width: 100%;
-        border-top: 1px solid $blackInline;
-        margin-top: 1rem;
-
+          @include HrLine;
+          width: 100%;
+          border-top: 1px solid $blackInline;
+          margin-top: 1rem;
         }
       }
     }
