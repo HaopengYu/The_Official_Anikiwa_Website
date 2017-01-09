@@ -1,11 +1,12 @@
 .w13LastNews{
+  margin: $widgetMargin 0 $widgetMargin 0;
   .w13Content{
     position:relative;
     .event-date{
       position: absolute;
       background-color: $primary-color;
       width:rem-calc(50);
-      bottom:5.4rem;
+      bottom:0.4rem;
       left:rem-calc(-10);
       p{
         color:white;
@@ -22,19 +23,19 @@
         }
       }
     }
-    span{
-      &.w13Title{
-        font-weight: bold;
-        display: block;
-        padding-top: rem-calc(10);
-      }
-      &.w13Text{
-        &:after{
-          @include HrLine;
-          width: 100%;
-          border-top: 1px solid $blackInline;
-          margin-top: 1rem;
-        }
+  }
+  span{
+    &.w13Title{
+      font-weight: bold;
+      display: block;
+      padding-top: rem-calc(10);
+    }
+    &.w13Text{
+      &:after{
+        @include HrLine;
+        width: 100%;
+        border-top: 1px solid $blackInline;
+        margin-top: 1rem;
       }
     }
   }
