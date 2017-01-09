@@ -1,0 +1,44 @@
+.w13LastNews{
+  .w13Content{
+    position:relative;
+    .event-date{
+      position: absolute;
+      background-color: $primary-color;
+      width:rem-calc(50);
+      bottom:5.4rem;
+      left:rem-calc(-10);
+      p{
+        color:white;
+        text-align: center;
+        margin-bottom: 0;
+        &.event-day{
+          font-weight: bold;
+          //margin-top: rem-calc(10);
+          font-size: 1.2rem;
+
+        }
+        &.event-month{
+          font-size: rem-calc(12);
+          margin-bottom: rem-calc(8);
+        }
+      }
+    }
+    span{
+      &.w13Title{
+        font-weight: bold;
+        display: block;
+        padding-top: rem-calc(10);
+
+      }
+      &.w13Text{
+        &:after{
+        @include HrLine;
+        width: 100%;
+        border-top: 1px solid $blackInline;
+        margin-top: 1rem;
+
+        }
+      }
+    }
+  }
+}
