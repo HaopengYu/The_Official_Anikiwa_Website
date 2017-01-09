@@ -1,0 +1,17 @@
+.w14GoogleMaps{
+  margin: $widgetMargin 0 $widgetMargin 0;
+  #map {
+    width: 100%;
+    height: 300px;
+    background-color: $primary-color;
+  }
+  .gmnoprint a, .gmnoprint span {
+    display:none;
+  }
+  .gmnoprint div {
+      background:none !important;
+  }
+  .gm-style-cc{
+    display: none;
+  }
+}

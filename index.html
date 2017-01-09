@@ -103,7 +103,7 @@
   <div class="w10Counter">
     <div class="row">
       <div class="column">
-        <!-- INSERT DIE DUDUDUDDUDUD -->
+        <div id="countdown" data-wow-delay=".3s" data-date="Jan 21, 2017 12:00:00"></div>
       </div>
     </div>
   </div>
@@ -412,6 +412,16 @@
         </div>
       </div>
     </div>
+    <!-- Begin W14GoogleMaps -->
+    <div class="w14GoogleMaps">
+      <div class="row fullWidth">
+        <div class="column">
+          <div id="map">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End w13GoogleMaps -->
     <!-- Begin Footer -->
     <footer>
       <div class="row">
@@ -538,6 +548,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript">
     $('.testSlider').slick({
@@ -570,6 +581,48 @@
 
         }]
     });
+    </script>
+    <script type="text/javascript">
+    if ($('#countdown').length) {
+    	$('#countdown').countdown({
+    		render: function(data) {
+    			if (data.years >= 1) {
+    				var $days =	(data.years*365)+data.days;
+    			} else {
+    				var $days = data.days;
+    			}
+    			$(this.el).html(
+    			'<div class="day">' + this.leadingZeros($days) + ' <span>Days</span></div>'+
+    			'<div class="hour">' + this.leadingZeros(data.hours, 2) + ' <span>Hours</span></div>'+
+    		  '<div class="min">' + this.leadingZeros(data.min, 2) + ' <span>Minutes</span></div>'+
+    		  '<div class="sec">' + this.leadingZeros(data.sec, 2) + ' <span>Seconds</span></div>'
+    			);
+    		}
+    	});
+    }
+
+    </script>
+    <script>
+    function initMap() {
+var myLatLng = {lat: 52.2273027, lng: 5.1827147};
+
+var map = new google.maps.Map(document.getElementById('map'), {
+  zoom: 15,
+  disableDefaultUI: true,
+  scrollwheel: false,
+  center: myLatLng,
+  styles: [{"stylers":[{"hue":"#a8e3fd"},{"saturation":250}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":50},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]}]
+});
+
+var marker = new google.maps.Marker({
+  position: myLatLng,
+  map: map,
+  title: 'Hello World!'
+});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzR95WXQJJ3JH-Jvq059sKlozdwRcCfZ4&callback=initMap">
     </script>
   </body>
 </html>

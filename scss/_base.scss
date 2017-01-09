@@ -3,6 +3,13 @@ $marginTop: 2rem;
 $marginSmallTop:1.125rem;
 $widgetMargin: 2rem;
 
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
 @mixin HrLine{
   content: " ";
   display: block;
