@@ -1,5 +1,38 @@
-.footer{
-  li{
-    display:inline;
+footer{
+  ul{
+    margin-left: 0;
+    li{
+      display:inline-block;
+      margin-right: 1rem;
+      &.firstchild{
+        margin-left: 1rem;
+      }
+    }
+  }
+  .footerBlockImage{
+    width: 150px;
+    height:auto;
+  }
+  span{
+    &.footerSocialTitle{
+      font-style: italic;
+      color: $tundora;
+    }
+    &.footerTitle{
+      font-weight: bold;
+    }
+    &.footerSubTitle{
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    &.footerSubText{
+      font-weight: bold;
+      display: block;
+    }
+    &.footerSubDate{
+      font-style: italic;
+      color:$tundora;
+    }
+
   }
 }
