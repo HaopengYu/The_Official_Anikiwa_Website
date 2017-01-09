@@ -1,12 +1,12 @@
 .w11SingleBanner{
+  margin: $widgetMargin 0 $widgetMargin 0;
   background-color: $primary-color;
-    h2{
-      font-size: 20px;
-      padding-top: rem-calc(20);
-    }
-    p{
-      @extend h3;
-      font-size: 17px;
-    }
-
+  h2{
+    font-size: rem-calc(20);
+    padding-top: rem-calc(20);
+  }
+  p{
+    @extend h3;
+    font-size: rem-calc(17);
+  }
 }
