@@ -1,29 +1,49 @@
 footer{
   ul{
     margin-left: 0;
+    margin-bottom: 2rem;
     li{
       display:inline-block;
-      margin-right: 1rem;
       &.firstchild{
         margin-left: 1rem;
       }
+      img{
+        &.footerBlockImage{
+          width:rem-calc(150);
+          height: auto;
+          float:left;
+          margin-right: 1.5rem;
+        }
+      }
     }
   }
-  .footerBlockImage{
-    width: 150px;
-    height:auto;
+  p{
+    color: $scropion;
+    font-size:rem-calc(12);
+    &.text-left{
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+    }
   }
   span{
     &.footerSocialTitle{
       font-style: italic;
       color: $tundora;
+
     }
     &.footerTitle{
       font-weight: bold;
+      &:after{
+        @include HrLine;
+        width:100%;
+        border-top: 1px solid $blackInline;
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+      }
     }
     &.footerSubTitle{
       font-weight: bold;
-      margin-bottom: 2rem;
+      line-height: 5rem;
     }
     &.footerSubText{
       font-weight: bold;
@@ -33,6 +53,5 @@ footer{
       font-style: italic;
       color:$tundora;
     }
-
   }
 }
