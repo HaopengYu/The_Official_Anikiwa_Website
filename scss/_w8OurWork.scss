@@ -1,15 +1,28 @@
 .w8OurWork{
   // background-color: pink;
+.w8ImageContent{
+  img{
+    overflow: hidden;
+    border-radius: 50%;
+    width:rem-calc(150);
+    height:rem-calc(150);
+    // display: inline;
+    float: left;
+
+    }
+  }
   .w8Content{
+    margin-left: rem-calc(170);
     span{
-      display: block;
       &.w8Name{
         margin-bottom:0.275rem;
         font-weight: bold;
+        display: block;
       }
       &.w8Job{
         font-style: italic;
         margin-bottom: $marginSmallTop;
+
         &:after{
           @include HrLine;
           margin-top: $marginSmallTop;
@@ -18,6 +31,8 @@
     }
     p{
       color:$tundora;
+      padding-top: rem-calc(20);
+
     }
   }
 }
