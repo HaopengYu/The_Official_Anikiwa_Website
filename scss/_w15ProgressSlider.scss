@@ -1,0 +1,32 @@
+.w15ProgressSlider{
+  margin: $widgetMargin 0 $widgetMargin 0;
+  .progressSlider{
+    img{
+      overflow: hidden;
+      border-radius: 50%;
+      width:rem-calc(150);
+      height:rem-calc(150);
+      display: inline;
+    }
+    .w15Content{
+      display: inline-block;
+      margin-left: $widgetMargin;
+      p{
+        margin-bottom: 0;
+        color: $tundora;
+      }
+      span{
+        &.w15Title{
+          font-family: $sofiaFont;
+          &:before{
+            content: " ";
+            @include HrLine;
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
