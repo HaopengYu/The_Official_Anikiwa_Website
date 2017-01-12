@@ -21,13 +21,13 @@
     p {
       letter-spacing: 0.15em;
       color: #f4f4f4;
-      font-size: 28px;
+      font-size: rem-calc(28);
       opacity: 0;
       transition: all 0.2s linear;
     }
     img {
       transition: all 0.2s linear;
-      height: 380px;
+      height:rem-calc(380);
     }
     .w16Content {
       opacity: 0;
