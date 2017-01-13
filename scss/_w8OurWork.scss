@@ -6,9 +6,7 @@
     border-radius: 50%;
     width:rem-calc(150);
     height:rem-calc(150);
-    // display: inline;
     float: left;
-
     }
   }
   .w8Content{
@@ -22,7 +20,6 @@
       &.w8Job{
         font-style: italic;
         margin-bottom: $marginSmallTop;
-
         &:after{
           @include HrLine;
           margin-top: $marginSmallTop;
@@ -32,7 +29,6 @@
     p{
       color:$tundora;
       padding-top: rem-calc(20);
-
     }
   }
 }
