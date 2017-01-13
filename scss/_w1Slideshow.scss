@@ -1,7 +1,15 @@
 .w1Slideshow{
-  margin: $widgetMargin 0 $widgetMargin 0;
+  .column{
+    padding:0!important;
+  }
   .slickContainer{
     position: relative;
+    img{
+      width:100%;
+    }
   }
-
+  .slick-prev,
+  .slick-next {
+    display: none!important;
+  }
 }
