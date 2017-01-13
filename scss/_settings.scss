@@ -123,7 +123,9 @@ $tuatara     : #444444;
 $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
-
+$noSleep: rgba(0,0,0,0);
+$sleepAnikiwa: rgba(168, 227, 253, 0.1);
+$awakeAnikiwa: rgba(168, 227, 253, 0.5);
 //Primary color ways of  anikiwa
 $frenchPass:      #a8fdee;
 $anikiwa:         #a8e3fd;
@@ -1434,7 +1436,7 @@ $align-block-grid-to-grid: true;
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: $primary-color;
+$topbar-bg-color: $noSleep;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1442,7 +1444,7 @@ $topbar-height: rem-calc(50);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
-// $topbar-title-weight: $font-weight-normal;
+$topbar-title-weight: $font-weight-bold;
 // $topbar-title-font-size: rem-calc(17);
 
 // Set the link colors and styles for top-level nav
@@ -1454,7 +1456,7 @@ $topbar-link-weight: $font-weight-normal;
 $topbar-link-font-size: rem-calc(13);
 $topbar-link-hover-lightness: -10%; // Darken by 10%
 $topbar-link-bg: $topbar-bg;
-$topbar-link-bg-hover: $secondaryAnikiwa;
+$topbar-link-bg-hover: $awakeAnikiwa;
 $topbar-link-bg-color-hover: $charcoal;
 $topbar-link-bg-active: $secondaryAnikiwa;
 $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
