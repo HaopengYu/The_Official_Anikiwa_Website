@@ -38,14 +38,17 @@
       <div class="column">
         <div class="slickContainer">
           <div class="testSlider">
-            <div>
-              <img src="./img/placeholder1.jpg"/>
+            <div class="slide1">
+              <h1>Test Ez GG</h1>
+              <a href="#">Test</a>
             </div>
-            <div>
-              <img src="./img/placeholder2.jpg"/>
+            <div class="slide2">
+              <h1>Test Ez GG2</h1>
+              <a href="#">Test</a>
             </div>
-            <div>
-              <img src="./img/placeholder3.jpg"/>
+            <div class="slide3">
+              <h1>Test Ez GG</h1>
+              <a href="#">Test</a>
             </div>
           </div>
         </div>
@@ -649,31 +652,8 @@
 
       // normal options...
       infinite: true,
-
-      // the magic
-      responsive: [{
-
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            infinite: true
-          }
-
-        }, {
-
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            dots: false,
-            fade:true
-          }
-
-        }, {
-
-          breakpoint: 300,
-          settings: "unslick" // destroys slick
-
-        }]
+      fade:true,
+      autoplay:false
     });
     </script>
     <script type="text/javascript">

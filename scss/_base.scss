@@ -17,3 +17,10 @@ $widgetMargin: 2rem;
   width: rem-calc(50);
   margin-top: $widgetMargin;
 }
+
+@mixin SlideShow{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: rem-calc(700);
+}

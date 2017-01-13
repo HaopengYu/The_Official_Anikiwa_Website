@@ -1,12 +1,34 @@
 .w1Slideshow{
+  max-height: 23.5625rem;
+  margin-bottom: $marginTop;
   .column{
     padding:0!important;
   }
   .slickContainer{
     position: relative;
-    img{
-      width:100%;
+    h1{
+      text-align: center;
+      color: $white;
+      margin-top: 8rem;
+      &:after{
+        @include HrLine;
+        margin: 0 auto;
+
+      }
     }
+    .slide1{
+      @include SlideShow;
+      background-image: url(../img/placeholder3.jpg);
+    }
+    .slide2{
+      @include SlideShow;
+      background-image: url(../img/placeholder2.jpg);
+    }
+    .slide3{
+      @include SlideShow;
+      background-image: url(../img/placeholder1.jpg);
+    }
+
   }
   .slick-prev,
   .slick-next {
