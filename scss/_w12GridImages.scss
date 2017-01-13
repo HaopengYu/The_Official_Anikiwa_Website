@@ -1,3 +1,6 @@
 .w12GridImages{
   margin: $widgetMargin 0 $widgetMargin 0;
+  .column{
+    padding:0!important;
+  }
 }
