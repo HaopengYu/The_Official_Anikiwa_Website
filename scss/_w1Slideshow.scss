@@ -7,18 +7,29 @@
   .slickContainer{
     position: relative;
     h1{
-      text-align: center;
       color: $white;
       margin-top: 8rem;
+      font-size: rem-calc(70);
+      text-shadow: 1px 1px 1px $scropion;
+      @media #{$small-only}{
+        font-size: rem-calc(50);
+      }
       &:after{
         @include HrLine;
         margin: 0 auto;
-
+        border-color: $white;
+        margin-top: 2rem;
       }
+    }
+    a{
+      @media #{$small-only}{
+        margin-top: $marginTop;
+      }
+      margin-top: 3rem;
     }
     .slide1{
       @include SlideShow;
-      background-image: url(../img/placeholder3.jpg);
+      background-image: url(../img/slidetest.jpg);
     }
     .slide2{
       @include SlideShow;

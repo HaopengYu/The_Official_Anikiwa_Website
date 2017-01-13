@@ -10,6 +10,15 @@ $widgetMargin: 2rem;
    max-width: initial;
 }
 
+.button{
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: rem-calc(2);
+  padding: rem-calc(5) rem-calc(20);
+  color:$white;
+  font-weight: bold;
+}
+
 @mixin HrLine{
   content: " ";
   display: block;
