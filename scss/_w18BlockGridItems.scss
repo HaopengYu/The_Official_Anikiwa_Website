@@ -1,4 +1,4 @@
-.w3BlockGridItems{
+.w18BlockGridItems{
   margin: $widgetMargin 0 $widgetMargin 0;
   i{
     font-size: 3rem;
@@ -13,14 +13,14 @@
       color: white;
     }
   }
-  .w3Content {
+  .w18Content {
   	width: 100%;
   	height: rem-calc(250);
     text-align: center;
   	border: 1px solid #ddd;
   	-webkit-transition: all 0.3s ease;
   	transition: all 0.3s ease;
-    .w3Content-icon-box {
+    .w18Content-icon-box {
       position: relative;
       top: rem-calc(50);
       display: inline-block;
@@ -29,13 +29,13 @@
       -webkit-transition: all 0.3s ease;
       transition: all 0.3s ease;
     }
-    .w3Content-heading {
+    .w18Content-heading {
       position: relative;
       top: rem-calc(50);
       -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
       transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
-    .w3Content-description {
+    .w18Content-description {
       width: 90%;
       margin: 0 auto;
       opacity: 0;
@@ -47,32 +47,32 @@
       -ms-transform: scale(0);
       transform: scale(0);
     }
-    .w3Content-icon-box > .w3Content-icon {
+    .w18Content-icon-box > .w18Content-icon {
   	  width: rem-calc(40);
     }
     &:hover {
   	  border-color: $primary-color;
     }
-    &:hover .w3Content-icon-box {
+    &:hover .w18Content-icon-box {
   	  top: -30px; //- waardes mogen van mij wel in px units
     }
-    &:hover .w3Content-heading {
+    &:hover .w18Content-heading {
   	  top: -30px; //- waardes mogen van mij wel in px units
     }
-    &:hover .w3Content-description {
+    &:hover .w18Content-description {
       opacity: 1;
       -webkit-transform: scale(1);
       -ms-transform: scale(1);
       transform: scale(1);
     }
     &.bg1{
-      background-image:url(../img/mikebegin1.jpg);
+      background-image:url(../img/mikeeind1.jpg);
       width: 100%;
       height: 15.625rem ;
       background-size: 480px 380px;
     }
     &.bg2{
-      background-image:url(../img/nicobegin1.jpg);
+      background-image:url(../img/nicoeind1.jpg);
       width: 100%;
       height: 15.625rem;
       background-size: 480px 310px;
