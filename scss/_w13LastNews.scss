@@ -2,6 +2,10 @@
   margin: $widgetMargin 0 $widgetMargin 0;
   .w13Content{
     position:relative;
+    img{
+      width: auto;
+      height: 19rem ;
+    }
     .event-date{
       position: absolute;
       background-color: $primary-color;
