@@ -46,6 +46,7 @@
       -webkit-transform: scale(0);
       -ms-transform: scale(0);
       transform: scale(0);
+      padding: 0.5rem;
     }
     .w18Content-icon-box > .w18Content-icon {
   	  width: rem-calc(40);
@@ -70,12 +71,14 @@
       width: 100%;
       height: 15.625rem ;
       background-size: 480px 330px;
+      background-position: center;
     }
     &.bg2{
       background-image:url(../img/nicoeind1.jpg);
       width: 100%;
       height: 15.625rem;
       background-size: 480px 310px;
+      background-position: center;
     }
   }
 }

@@ -9,4 +9,12 @@
     @extend h3;
     font-size: rem-calc(17);
   }
+  &.bg1{
+    img{
+      width: 100%;
+    }
+    .column{
+      padding: 0!important;
+    }
+  }
 }
